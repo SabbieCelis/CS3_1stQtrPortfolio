@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <head>
+        <title>Meal Cost Calculator</title>
+    </head>
+
+    <h2>Q1 2nd Graded Exercise submitted by Sabbie Celis of 9-Lithium</h2>
+
+        <label>Meal Price: </label>
+        <input type="number" id="mealPrice"><br><br>
+
+        <label>Tip: </label>
+        <input type="number" id="tip"><br><br>
+
+        <label>Service Charge: </label>
+        <input type="number" id="serviceCharge"><br><br>
+
+        <button onclick="totalMeal()">Accept Input</button>
+
+        <p id="output"></p>
+    <script>
+        function totalMeal() 
+        {
+            let mp = parseFloat(mealPrice.value);
+            let t = parseFloat(tip.value);
+            let sc = parseFloat(serviceCharge.value);
+
+            let totalCost = mp + t + (sc / 100 * mp);
+
+            let format = totalCost.toFixed(2);
+
+            output.innerHTML = "Meal Total: " + format;
+        }
+    </script>
+</body>
+</html>
