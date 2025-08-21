@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Guess the Number</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                height: 97.7vh;
+                background-size: fill;
+                background: linear-gradient(to top left, #99ff33 0%, #ffffff 100%);
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            h2 {
+                font-family: "Fredoka", sans-serif;
+            }
+
+            p {
+                font-family: "Fredoka", sans-serif;
+            }
+
+            label {
+                font-family: "Fredoka", sans-serif;
+            }
+
+            button {
+                font-family: "Fredoka", sans-serif;
+                font-size: 1rem;
+                padding: 10px;
+                border-radius: 25px;
+                background-color: #72aa39;
+                color: white;
+                border-color: #214b0d;
+            }
+            #box {
+                border: 1px solid rgb(255, 255, 255);
+                padding: 1.2em;
+                border-radius: 2%;
+                background-color: #ffffff;
+                box-shadow: 5px 10px 13px rgba(44, 87, 50, 0.3);
+                text-align: center;
+            }
+
+            #corner-img {
+                position: absolute;
+                top: 135px;
+                right: 974px;
+                width: 150px;
+            }
+            input {
+                text-align: center;
+            }
+
+
+        </style>
+</head>
+<body>
+    <img src="https://cdn.discordapp.com/attachments/1219889703906709564/1408012464054079589/c293d27ec2a700ba068f7747c9f9e146-removebg-preview.png?ex=68a8314b&is=68a6dfcb&hm=68c92b9262434f052a54e2dad06f12b9326a41402babbd064d53799eb3b0f4de" id="corner-img">
+<div id="box">
+    <h2> Q1 3rd Graded Exercise submitted by Sabbie Celis of 9-Lithium </h2>
+
+        <p>Guess the Number (˚Δ˚)b :</p>
+        <p>The number generated is from 1 - 100</p></strong>
+        <label>Type in your guess: </label>
+        <input type="number" id="userGuess"><br><br>
+
+        <button onclick="checkIt()">Check my Guess</button>
+
+        <p>Result: <span id="output"></span></p>
+
+
+    </div>
+
+        <script>
+
+        var dNumber = Math.floor(Math.random() * 100) + 1;
+
+        function checkIt() 
+        {
+            let ug = parseInt(userGuess.value);
+
+            if (ug > dNumber) {
+                output.innerHTML = "Guess Lower";
+            }
+
+            else if (ug === dNumber) {
+                output.innerHTML = "Your guess is Correct!";
+            }
+
+            else {
+                output.innerHTML = "Guess Higher";
+            }
+        }
+    </script>
+</body>
+</html>
