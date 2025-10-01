@@ -17,8 +17,7 @@
 5. **Event Handlers** - This confused me a bit since it was not discussed, but could also make activities easier to build/make. I will try my best to understand this topic better though.
 
 ## Describe on what will be your plan of action in order to help yourself in understanding further the topics listed on the second items.
-
-
+- **My plan** - I would try my best to practice more in coding and look for exercises. Moreover, I'll try to find time to read the LGs given in KHub. I would also do my own personal research outside of KHub to gain a better understanding of the topics.
 
 ## In the activities that were done in class, list at least two that you think were effective and at least two that you think not effective in helping you understand topics in our course and why?
 
